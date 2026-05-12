@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #22668A !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+  color: white !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-toggle:hover {
+  color: #FFCC70 !important;
+}
+
+.navbar .dropdown-menu {
+  background-color: #22668A;
+}
+
+.navbar .dropdown-item {
+  color: white;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #1a4f6e;
+  color: #FFCC70;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Card styling for categories */
+.category-card {
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.category-card.active {
+  background-color: #22668A;
+  color: white;
+  box-shadow: 0 4px 15px rgba(34,102,138,0.3);
+}
+
+.category-card.active .card-title {
+  color: white;
+}
+
+.category-card .card-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Product card styling */
+.product-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.product-card .card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-card .card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .card-text {
+  color: #22668A;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Hasil/Cart styling */
+.hasil-card {
+  position: sticky;
+  top: 20px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.hasil-card .card-header {
+  background-color: #22668A;
+  color: white;
+  border-radius: 12px 12px 0 0 !important;
+  padding: 15px;
+}
+
+.hasil-card .card-header h5 {
+  margin: 0;
+}
+
+.cart-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cart-item-price {
+  color: #22668A;
+  font-weight: bold;
+}
+
+.total-bayar {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.btn-checkout {
+  background-color: #22668A;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.btn-checkout:hover {
+  background-color: #1a4f6e;
+}
+
+.category-aktif {
+  background-color: #22668A !important;
+  color: white !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hasil-card {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin: 0;
+    border-radius: 12px 12px 0 0;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+}
