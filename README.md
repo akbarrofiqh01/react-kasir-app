@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 install node v14.21.3
-install json-server v0.17.4
+install json-server/json-placeholder v0.17.4
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
